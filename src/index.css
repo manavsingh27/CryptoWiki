@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* .App .Form .SearchButton{
+background-color:green;
+ color:white;
+} */
+
+.App .Form
+{
+  text-align: center;
+}
+
+.App .Form .search-input{
+  width: 40vw;
+  height: 35px;
+  /* border-radius: 10px; */
+}
+
+@media(max-width: 600px){
+  .App .Form .search-input{
+    width: 50vw;
+    height: 35px;
+  }
+}
+
+.result
+{
+  background-color: aquamarine;
+}
+
+.coin-displaY{
+  background-color: #5E8F9B;
+  /* width: 100%; */
+}
+
+.coindisplaY h3{
+  cursor: pointer;
+}
+
+.result-table{
+  padding: 0px !important;
+}
+.result-table table tbody tr td{
+  padding-left: 10px;
+  padding-right: 20px;
+}
