@@ -34,6 +34,8 @@ export default class Searchbar extends Component {
         let obj = this.state.coins.data.filter(coin => {
             return coin.name === this.state.currency;
         });
+
+        if(obj[0]){
         axios.get(`https://api.coingecko.com/api/v3/coins/${obj[0].id}`)
             .then(res => {
                 this.setState({
@@ -43,6 +45,14 @@ export default class Searchbar extends Component {
             }).catch((err) => {
                 console.log(`An error has been occurred`);
             });
+
+        }else{
+            this.setState({
+                searchedCoin : "",
+                showData : false
+            });
+            alert('Please enter a valid currency')
+        }
         console.log('Submit fired');
             }
 
